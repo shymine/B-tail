@@ -1,0 +1,46 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+\usepackage[french]{babel}
+\usepackage{subfiles}
+
+
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\MakeShortVerb{|}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+\title{Bétail \\ livre de règles}
+\author{Timothée Neitthoffer}
+\date{20/08/2020}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter%
+
+\subfile{chapters/introduction}
+\subfile{chapters/system}
+\subfile{chapters/adventure}
+\subfile{chapters/fight}
+\subfile{chapters/mutations}
+\subfile{chapters/magic}
+\subfile{chapters/gear}
+\subfile{chapters/caracteristics}
+\subfile{chapters/create}
+\subfile{chapters/evolution}
+\subfile{chapters/master}
+\subfile{chapters/scenario}
+
+\end{document}
